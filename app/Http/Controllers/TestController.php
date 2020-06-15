@@ -10,7 +10,7 @@ class TestController extends Controller
     {
     	$image_file = public_path().'/photos/7631591416660.jpg';
     	
-		$result=new TesseractOCR($image_file)->run();
+		$result=(new TesseractOCR($image_file))->run();
 		echo $result;
     }
 }
