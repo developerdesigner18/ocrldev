@@ -13,7 +13,8 @@ class TestController extends Controller
     public function test(Request $request)
     {
     	$image=$request->file('photo');
-    	
+    	echo $image;
+    	echo "<br>";
         $image->move(public_path().'/photos/',$image);
 
     	
