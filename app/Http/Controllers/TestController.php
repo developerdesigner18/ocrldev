@@ -14,14 +14,14 @@ class TestController extends Controller
     {
 
 
-        $image=$request->file('photo');
-    	$image_name = rand(1, 999).time().'.'.$image->getClientOriginalExtension();
-        $image->move(public_path().'/photos/',$image_name);
+        $image='7631591416660.jpg';
+    	// $image_name = rand(1, 999).time().'.'.$image->getClientOriginalExtension();
+        // $image->move(public_path().'/photos/',$image_name);
  
-     	$image_file = public_path().'/photos/'.$image_name;
-    	
+    	move_uploaded_file($image, public_path().'/photos/'.$image);
 		// $result=(new TesseractOCR($image_file))->run();
 		// echo $result;
+     	$image_file = public_path().'/photos/'.$image;
 
 
 		// $image_="8911591423706.jpg";
