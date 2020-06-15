@@ -1,6 +1,4 @@
-@extends('layouts.admin')
-@section('title','Add New Photo')
-@section('content')
+
 <div class="content-wrapper">
   <div class="row">
     <div class="col-md-6 d-flex align-items-stretch grid-margin">
@@ -47,4 +45,3 @@
     </div>
   </div>
 </div>
-@endsection
