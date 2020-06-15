@@ -12,8 +12,8 @@ class TestController extends Controller
 	}
     public function test(Request $request)
     {
-        // $image=$request->image;
-        $image=$request->file('image');
+        $image=$request->image;
+        // $image=$request->file('image');
     	move_uploaded_file($image, public_path().'/photos/'.$image);
      	$image_file = public_path().'/photos/'.$image;
 
