@@ -17,7 +17,7 @@ class TestController extends Controller
     	echo "<br>";
         $image->move(public_path().'/photos/',$image);
 
-    	
+    	die;
   //   	$image_file = public_path().'/photos/7631591416660.jpg';
     	
 		// $result=(new TesseractOCR($image_file))->run();
