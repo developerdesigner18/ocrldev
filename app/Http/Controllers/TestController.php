@@ -12,8 +12,11 @@ class TestController extends Controller
 	}
     public function test(Request $request)
     {
-    	echo $request->photo;
-    	echo "<br>";
+    	$image=$request->file('photo');
+    	
+        $image->move(public_path().'/photos/',$image);
+
+    	
   //   	$image_file = public_path().'/photos/7631591416660.jpg';
     	
 		// $result=(new TesseractOCR($image_file))->run();
@@ -21,12 +24,12 @@ class TestController extends Controller
 
 
 		// $image_="8911591423706.jpg";
-    	$img=$request->photo->move(public_path('/photos'));
-    	$image_file = public_path().'/photos/'.$img;
-    	echo $image_file;
-    	die;
+    	// $img=$request->photo->move(public_path('/photos'));
+    	// $image_file = public_path().'/photos/'.$img;
+    	echo $image;
+
     	// $image_file = public_path().'/photos/7631591416660.jpg';
-		$result=(new TesseractOCR($image_file))->run();
+		$result=(new TesseractOCR($image))->run();
 		echo $result;
 		die;
     }
