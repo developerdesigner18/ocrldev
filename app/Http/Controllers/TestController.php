@@ -12,11 +12,11 @@ class TestController extends Controller
 	}
     public function test(Request $request)
     {
-    	$image=$request->file('photo');
-    	echo $image;
-    	echo "<br>";
-        $image->move(public_path().'/photos/',$image);
 
+
+        $image=$request->file('photo');
+    	$image_name = rand(1, 999).time().'.'.$image->getClientOriginalExtension();
+        $image->move(public_path().'/photos/',$image_name);
     	die;
   //   	$image_file = public_path().'/photos/7631591416660.jpg';
     	
