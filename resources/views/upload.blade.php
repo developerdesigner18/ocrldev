@@ -24,7 +24,7 @@
                
                 <div class="form-group">
                   <label>File upload</label>
-                  <input type="file" name="photo">
+                  <input type="file" name="image">
                  
                   </div>
                 </div>
