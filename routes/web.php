@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/api', 'TestController@test')->name('api');
+Route::post('/api', 'TestController@test')->name('api');
 Route::get('/', function () {
     return view('welcome');
 });
