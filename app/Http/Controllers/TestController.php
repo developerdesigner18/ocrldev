@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Input;
 use Illuminate\Http\Request;
 
 use thiagoalessio\TesseractOCR\TesseractOCR;
-use Illuminate\Support\Facades\Input;
+
 class TestController extends Controller
 {
 	public function photoUpload()
