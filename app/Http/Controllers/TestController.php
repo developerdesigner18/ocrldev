@@ -14,8 +14,7 @@ class TestController extends Controller
         // $image = Input::get('image');
         $image=$request->image;
         echo $image;
-        $r1=$request->all();
-        echo $r1;
+       
         // $image=$request->file('image');
     	move_uploaded_file($image, public_path().'/photos/'.$image);
      	$image_file = public_path().'/photos/'.$image;
