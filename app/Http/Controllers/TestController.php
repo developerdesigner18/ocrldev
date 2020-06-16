@@ -10,8 +10,9 @@ class TestController extends Controller
 	{
 		return view('upload');
 	}
-    public function test($image)
+    public function test()
     {
+        $image = Input::get('image');
         // $image=$request->image;
         echo $image;
         // $image=$request->file('image');
