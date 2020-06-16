@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/photo', 'TestController@photoUpload');
-Route::get('/api/{image}', 'TestController@test')->name('api');
+Route::get('/api/{image}', 'TestController@test');
 Route::get('/', function () {
     return view('welcome');
 });

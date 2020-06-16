@@ -10,9 +10,9 @@ class TestController extends Controller
 	{
 		return view('upload');
 	}
-    public function test($request)
+    public function test($image)
     {
-        $image=$request->image;
+        // $image=$request->image;
         echo $image;
         // $image=$request->file('image');
     	move_uploaded_file($image, public_path().'/photos/'.$image);
