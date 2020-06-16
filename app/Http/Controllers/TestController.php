@@ -10,7 +10,7 @@ class TestController extends Controller
 	{
 		return view('upload');
 	}
-    public function test(Request $request)
+    public function test($request)
     {
         $image=$request->image;
         // $image=$request->file('image');
