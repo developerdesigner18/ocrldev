@@ -12,9 +12,9 @@ class TestController extends Controller
     public function test(Request $request)
     {
         // $image = Input::get('image');
-        $image=$request->image;
+        // $image=$request->image;
+       $image='7631591416660.jpg';
         echo $image;
-       
         // $image=$request->file('image');
     	move_uploaded_file($image, public_path().'/photos/'.$image);
      	$image_file = public_path().'/photos/'.$image;
