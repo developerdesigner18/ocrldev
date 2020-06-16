@@ -16,7 +16,8 @@ class TestController extends Controller
         // $image=$request->image;
         $image='8911591423706.jpg';
         $url = 'https://www.ocrldev.xyz/photos/'.$image;
-        $img = '/public/photos/'.$image;
+        echo $url;
+        $img =  public_path().'/photos/'.$image;
         file_put_contents($img, file_get_contents($url));
 
      //    echo $image;
