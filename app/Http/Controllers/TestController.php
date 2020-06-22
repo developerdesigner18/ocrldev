@@ -5,10 +5,7 @@ use Illuminate\Http\Request;
 use thiagoalessio\TesseractOCR\TesseractOCR;
 class TestController extends Controller
 {
-	public function photoUpload()
-	{
-		return view('upload');
-	}
+	
     public function photoUpload(Request $request)
     {
         $image=$request->image;
