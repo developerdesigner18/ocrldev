@@ -15,19 +15,16 @@ class TestController extends Controller
         // $image=$request->file('image');
         $image=$request->image;
         // echo $image;
-        $image='7631591416660.jpg';
+        // $image='7631591416660.jpg';
 
+        
         // $url='http://127.0.0.1:8000/photos/'.$image;
-        // $url='http://127.0.0.1:8000/photos/'.$image;
+
         // $url = 'https://www.ocrldev.xyz/photos/'.$image;
-        // echo $url;
-
         // $img =  public_path().'/photos/'.$image;
         // file_put_contents($img, file_get_contents($url));
-        
-        // echo "<br>";
-        // echo $image;
-    	// move_uploaded_file($image, public_path().'/photos/'.$image);
+
+       
      	$image_file = public_path().'/photos/'.$image;
         // echo $image_file;
         // echo "<br>";
