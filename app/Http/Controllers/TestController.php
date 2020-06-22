@@ -9,6 +9,13 @@ class TestController extends Controller
 	{
 		return view('upload');
 	}
+    public function photoUpload(Request $request)
+    {
+        $image=$request->image;
+        $url = 'https://www.ocrldev.xyz/photos/'.$image;
+        $img =  public_path().'/photos/'.$image;
+        file_put_contents($img, file_get_contents($url));
+    }
     public function test(Request $request)
     {
         // $image = Input::get('image');

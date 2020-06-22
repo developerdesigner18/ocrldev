@@ -15,19 +15,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/photo', 'TestController@photoUpload');
 // Route::get('/api', 'TestController@test');
 Route::get('api', 'TestController@test');
+Route::get('upload', 'TestController@photoUpload');
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::group(['prefix' => 'admin'], function () {
-		Route::get('/index', 'HomeController@index');
-		Route::get('/home', 'HomeController@index');
-		Route::get('/photoList', 'Admin\HomeController@photoList');
-		Route::get('/photoUpload', 'Admin\HomeController@photoUpload');
-		Route::post('/postPhotoUpload', 'Admin\HomeController@postPhotoUpload');
-		Route::get('/photoScan/{id}', 'Admin\HomeController@photoScan');
-});
-
+// Auth::routes();
