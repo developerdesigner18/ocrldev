@@ -15,7 +15,7 @@ class TestController extends Controller
         // $image=$request->file('image');
         $image=$request->image;
         // echo $image;
-        $image='6141591615254.png';
+        $image='7631591416660.jpg';
 
         // $url='http://127.0.0.1:8000/photos/'.$image;
         // $url='http://127.0.0.1:8000/photos/'.$image;
