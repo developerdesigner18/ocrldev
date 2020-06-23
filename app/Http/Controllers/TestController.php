@@ -18,7 +18,7 @@ class TestController extends Controller
         // $image = Input::get('image');
         // $image=$request->file('image');
         $image=$request->image;
-        // echo $image;
+        echo $image;
         // $image='7631591416660.jpg';
 
         
