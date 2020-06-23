@@ -22,12 +22,11 @@ class TestController extends Controller
         // $image='7631591416660.jpg';
 
 
-        // $url = 'https://www.ocrldev.xyz/photos/'.$image;
-        // $img =  public_path().'/photos/'.$image;
+        $url = 'https://www.ocrldev.xyz/photos/'.$image;
+        $img =  public_path().'/photos/'.$image;
 
-        $url = 'https://www.ocrldev.xyz/'.$image;
-        // echo $url;
-        $img =  public_path().'/'.$image;
+        // $url = 'https://www.ocrldev.xyz/'.$image;
+        // $img =  public_path().'/'.$image;
 
         file_put_contents($img, file_get_contents($url));
 
