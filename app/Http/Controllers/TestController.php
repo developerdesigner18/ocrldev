@@ -31,7 +31,7 @@ class TestController extends Controller
         file_put_contents($img, file_get_contents($url));
 
        
-     	$image_file = public_path().'/'.$image;
+     	$image_file = public_path().'/photos/'.$image;
         // echo $image_file;
 		$result=(new TesseractOCR($image_file))->whitelist(range(0, 9),range('A', 'Z'))->run();
         // echo $result;
