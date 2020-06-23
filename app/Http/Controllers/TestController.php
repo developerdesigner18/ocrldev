@@ -18,7 +18,7 @@ class TestController extends Controller
         // $image = Input::get('image');
         // $image=$request->file('image');
         $image=$request->image;
-        echo $image;
+        // echo $image;
         // $image='7631591416660.jpg';
 
         
@@ -30,7 +30,7 @@ class TestController extends Controller
 
        
      	$image_file = public_path().'/photos/'.$image;
-        echo $image_file;
+        // echo $image_file;
 		$result=(new TesseractOCR($image_file))->run();
         // echo $result;
         // die;
